@@ -1,0 +1,199 @@
+{
+  "Actor": {
+    
+  },
+  "Item": {
+    "types": [
+      "ammo",
+      "weapon",
+      "lifestyle"
+    ],
+    "templates": {
+      "description": {
+        "description": {
+          "value": "",
+          "chat": "",
+          "source": ""
+        }
+      },
+      "action": {
+        "action": {
+          "type": "",
+          "test": "SuccessTest",
+          "category": "",
+          "attribute": "",
+          "attribute2": "",
+          "skill": "",
+          "spec": "",
+          "mod": 0,
+          "mod_description": "",
+          "roll_mode": "",
+          "threshold": {
+            "value": 0,
+            "base": 0
+          },
+          "extended": false,
+          "damage": {
+            "type": {
+              "value": "",
+              "base": ""
+            },
+            "element": {
+              "value": "",
+              "base": ""
+            },
+            "value": 0,
+            "base": 0,
+            "base_formula_operator": "add",
+            "attribute": "",
+            "source": {
+              "actorId": "",
+              "itemId": "",
+              "itemType": "",
+              "itemName": ""
+            }
+          },
+          "opposed": {
+            "type": "",
+            "test": "",
+            "attribute": "",
+            "attribute2": "",
+            "skill": "",
+            "mod": 0,
+            "description": "",
+            "resist": {
+              "test": "",
+              "skill": "",
+              "attribute": "",
+              "attribute2": "",
+              "mod": 0
+            }
+          },
+          "followed": {
+            "test": "",
+            "attribute": "",
+            "attribute2": "",
+            "skill": "",
+            "mod": 0
+          },
+          "modifiers": []
+        }
+      },
+      "technology": {
+        "technology": {
+          "rating": 1,
+          "availability": "",
+          "quantity": 1,
+          "cost": 0,
+          "equipped": false,
+          "conceal": {
+            "base": 0,
+            "value": 0
+          },
+          "condition_monitor": {
+            "value": 0,
+            "max": 9
+          },
+          "wireless": true,
+          "networkController": null
+        }
+      },
+      "weapon": {
+        "category": "",
+        "subcategory": "",
+        "ammo": {
+          "spare_clips": {
+            "value": 0,
+            "max": 0
+          },
+          "current": {
+            "value": 0,
+            "max": 0
+          }
+        },
+        "range": {
+          "category": "",
+          "ranges": {
+            "close": 0,
+            "near": 0,
+            "medium": 0,
+            "far": 0,
+            "extreme": 0
+          },
+          "modes": {
+            "single_shot": false,
+            "semi_auto": false,
+            "burst_fire": false,
+            "full_auto": false
+          }
+        },
+        "melee": {
+          "ranges": {
+            "close": 0,
+            "near": 0,
+            "medium": 0,
+            "far": 0,
+            "extreme": 0
+          }
+        },
+        "thrown": {
+          "ranges": {
+            "close": 0,
+            "near": 0,
+            "medium": 0,
+            "far": 0,
+            "extreme": 0
+          },
+          "blast": {
+            "radius": 0,
+            "dropoff": 0
+          }
+        },
+        "action": {
+          "opposed": {
+            "test": "PhysicalDefenseTest",
+            "resist": {
+              "test": "PhysicalResistTest"
+            }
+          }
+        }
+      }
+    },
+    "htmlFields": ["description.value", "description.chat"],
+    "ammo": {
+      "templates": ["description", "technology"],
+      "ammoClass": "",
+      "element": "",
+      "attackMod": 0,
+      "damageMod": 0,
+      "blast": {
+        "radius": 0,
+        "dropoff": 0
+      }
+    },
+    "weapon": {
+      "templates": ["description", "action", "technology", "weapon"],
+      "action": {
+        "test": "",
+        "opposed": {
+          "test": "PhysicalDefenseTest",
+          "resist": {
+            "test": "PhysicalResistTest"
+          }
+        }
+      },
+      "needsLicense": false
+    },
+    "lifestyle": {
+      "templates": ["description"],
+      "type": "",
+      "comforts": 0,
+      "security": 0,
+      "neighborhood": 0,
+      "guests": 0,
+      "permanent": false,
+      "cost": 0,
+      "mods": []
+    }
+  }
+}

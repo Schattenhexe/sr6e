@@ -1,0 +1,81 @@
+<form class="{{cssClass}} panoptikum" autocomplete="off">
+    {{> "systems/sr6e/templates/item/parts/header.html"}}
+    <section class="basic-details" onchange="">
+        <div class="flexcol sheetrow">
+            <select name="system.category" class="panoptikum-select">
+                {{selectOptions weaponTypes selected=system.category localize=true}}
+            </select>
+            <select name="system.subcategory" class="panoptikum-select {{system.category}}">
+                <optgroup class="melee">
+                    {{selectOptions meleeTypes selected=system.subcategory localize=true}}
+                </optgroup>
+                <optgroup class="firearm">
+                    {{selectOptions firearmTypes selected=system.subcategory localize=true}}
+                </optgroup>
+                <optgroup class="projectile">
+                    {{selectOptions projectileTypes selected=system.subcategory localize=true}}
+                </optgroup>
+                <optgroup class="exoticWeapon">
+
+                </optgroup>
+            </select>
+            <div class="prop hidden">
+                <div class="{{system.category}}">
+                <span class="label">{{localize "SR6E.ss"}}</span>
+                <input type="checkbox" name="system.ss" data-dtype="Boolean" {{checked system.ss}} />
+                </div>
+            </div>
+            <div class="prop hidden">
+                <div class="{{system.category}}">
+                <span class="label">{{localize "SR6E.sa"}}</span>
+                <input type="checkbox" name="system.sa" data-dtype="Boolean" {{checked system.sa}} />
+                </div>
+            </div>
+            <div class="prop hidden">
+                <div class="{{system.category}}">
+                <span class="label">{{localize "SR6E.bf"}}</span>
+                <input type="checkbox" name="system.bf" data-dtype="Boolean" {{checked system.bf}} />
+                </div>
+            </div>
+            <div class="prop hidden">
+                <div class="{{system.category}}">
+                <span class="label">{{localize "SR6E.fa"}}</span>
+                <input type="checkbox" name="system.fa" data-dtype="Boolean" {{checked system.fa}} />
+                </div>
+            </div>
+        </div>
+        <div class="flexcol sheetrow">
+            <table class="attackanddamage">
+                <tr>
+                    <th>{{localize "SR6E.dmg"}}</th>
+                    <th>{{localize "SR6E.dmgtype"}}</th>
+                    <th>{{localize "SR6E.ranges.close"}}</th>
+                    <th>{{localize "SR6E.ranges.near"}}</th>
+                    <th>{{localize "SR6E.ranges.medium"}}</th>
+                    <th>{{localize "SR6E.ranges.far"}}</th>
+                    <th>{{localize "SR6E.ranges.extreme"}}</th>
+                    <th>{{localize "SR6E.ammo"}}</th>
+                </tr>
+                <tr>
+                    <td><input name="system.dmg" type="number" value="{{system.dmg}}"></td>
+                    <td>
+                        <select name="system.dmgType" class="panoptikum-select">
+                            
+                        </select>
+                    </td>
+                    <td><input name="system.close" type="number" value="{{system.close}}"></td>
+                    <td><input name="system.near" type="number" value="{{system.near}}"></td>
+                    <td><input name="system.medium" type="number" value="{{system.medium}}"></td>
+                    <td><input name="system.far" type="number" value="{{system.far}}"></td>
+                    <td><input name="system.extreme" type="number" value="{{system.extreme}}"></td>
+                    <td>
+                        <select name="system.usedAmmo" class="panoptikum-select">
+                            
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        {{> "systems/sr6e/templates/item/parts/description.html"}}
+    </section>
+</form>

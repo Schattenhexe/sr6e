@@ -1,0 +1,26 @@
+<header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" width="100" height="100" />
+    <div class="header-fields">
+        <h2 class="weaponname">
+            <input name="name" type="text" value="{{item.name}}" placeholder="name" />
+        </h2>
+        <div class="flexcol sheetrow">
+            <div class="prop">
+                <span class="label">{{localize "SR6E.Price"}}:</span>
+                <input type="text" name="system.technology.cost" value="{{system.technology.cost}}" data-dtype="Number"
+                    placeholder="100" />
+                <span class="currency"><i class="fas fa-yen-sign"></i></span>
+            </div>
+            <div class="prop">
+                <span class="label">{{localize "SR6E.Avail"}}:</span>
+                <input type="text" name="system.technology.availability" value="{{system.technology.availability}}"
+                    placeholder="2" />
+            </div>
+            <div class="prop">
+                <span class="label">{{localize "SR6E.needsLicense"}}:</span>
+                <input type="checkbox" name="system.needsLicense" data-dtype="Boolean" {{checked
+                    system.needsLicense}} />
+            </div>
+        </div>
+    </div>
+</header>

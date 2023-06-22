@@ -1,0 +1,91 @@
+{
+  "SR6E.AbilityStrAbbr": "str",
+  "SR6E.AbilityConAbbr": "con",
+  "SR6E.AbilityDexAbbr": "dex",
+  "SR6E.AbilityIntAbbr": "int",
+  "SR6E.AbilityWisAbbr": "wis",
+  "SR6E.AbilityChaAbbr": "cha",
+
+  "SR6E.EffectCreate": "Create Effect",
+  "SR6E.EffectToggle": "Toggle Effect",
+  "SR6E.EffectEdit": "Edit Effect",
+  "SR6E.EffectDelete": "Delete Effect",
+
+  "SR6E.Add": "Add",
+  
+  "SR6E.Price": "Price",
+  "SR6E.Avail": "Availability",
+  "SR6E.needsLicense": "Needs License",
+  "SR6E.ss": "SS",
+  "SR6E.sa": "SA",
+  "SR6E.bf": "BF",
+  "SR6E.fa": "FA",
+  "SR6E.dmg": "DV",
+  "SR6E.dmgtype": "DT",
+  "SR6E.ammo": "Ammo",
+  "SR6E.base": "Base",
+  "SR6E.AmmoClass": "Class",
+  "SR6E.AttackMod": "AR",
+  "SR6E.DamageMod": "DV",
+  "SR6E.Quantity": "Quantity",
+  
+  "SR6E.weaponTypes": {
+    "melee": "Melee",
+    "projectile": "Projectile",
+    "firearm": "Firearm",
+    "exoticWeapon": "Exotic Weapon"
+  },
+  "SR6E.firearmTypes": {
+    "taser": "Taser",
+    "holdout": "Hold-Out",
+    "lightPistol": "Light Pistol",
+    "mp": "Machine Pistol",
+    "heavyPistol": "Heavy Pistol",
+    "smg": "Submachine Gun",
+    "shotgun": "Shotgun",
+    "rifle": "Rifle",
+    "mg": "Machine Gun",
+    "ac": "Assault Cannon"
+  },
+  "SR6E.meleeTypes": {
+    "blade": "Blade",
+    "club": "Club",
+    "other": "Other"
+  },
+  "SR6E.projectileTypes": {
+    "thrown": "Thrown",
+    "projectile": "Projectile"
+  },
+  "SR6E.ammoTypes": {
+    "explosive": "Explosive",
+    "flechette": "Flechette",
+    "gel": "Gel",
+    "shock": "Stick-N-Shock",
+    "apds": "APDS",
+    "taser": "Taser",
+    "regular": "Regular",
+    "assault": "Assault Cannon",
+    "injection": "Injection Darts"
+  },
+
+  "SR6E.ranges": {
+    "close": "C",
+    "near": "N",
+    "medium": "M",
+    "far": "F",
+    "extreme": "E"
+  },
+  "SR6E.dmgTypes": {
+    "physical": "P",
+    "stun": "S",
+    "electricityStun": "S(e)"
+  },
+  "SR6E.SheetTabs": {
+    "Description": "Description",
+    "Weapon": "Weapon",
+    "Ammo": "Ammo",
+    "WeaponMods": "Modifications",
+    "Effects": "Effects",
+    "Lifestyle": "Lifestyle"
+  }
+}

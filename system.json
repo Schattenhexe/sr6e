@@ -1,0 +1,36 @@
+{
+  "id": "sr6e",
+  "title": "Shadowrun6",
+  "description": "The Shadowrun6 system for FoundryVTT!",
+  "version": "0.0.01",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "authors": [{
+    "name": "Schattenhexe",
+    "url": "https://www.schattenhexe.net",
+    "email": "info@schattenhexe.net",
+    "discord": "schattenhexe"
+  }],
+  "esmodules": ["module/sr6e.mjs"],
+  "styles": ["css/sr6e.css"],
+  "scripts": [],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "track.physical",
+  "secondaryTokenAttribute": "track.stun",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "LICENSE.txt",
+  "changelog": "CHANGELOG.md"
+}
