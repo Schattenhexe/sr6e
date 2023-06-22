@@ -8,7 +8,7 @@ export class Shadowrun6ItemSheet extends ItemSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       classes: ["sr6e", "sheet", "item"],
-      width: 620,
+      width: 625,
       height: 480,
       tabs: [{ navSelector: ".tabs", contentSelector: ".basic-details", initial: "description" }]
     });

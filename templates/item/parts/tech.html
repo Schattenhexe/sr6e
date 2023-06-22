@@ -1,0 +1,86 @@
+<div class="flexcol">
+    <div class="tech">
+        {{#if system.essence}}
+            <div class="flexrow">
+                <label>{{localize "SR6E.EssenceCost"}}</label>
+                <input
+                    class="display attribute-input"
+                    type="text"
+                    size="4"
+                    name="system.essence"
+                    value="{{system.essence}}"
+                    data-dtype="Number"
+                    placeholder="0"
+                />
+            </div>
+        {{/if}}
+        <div class="flexrow">
+            <label>{{localize "SR6E.Rating"}}:</label>
+            <input 
+                class="display"
+                type="text"
+                size="2"
+                maxlength="2"
+                name="system.technology.rating"
+                value="{{system.technology.rating}}"
+                data-dtype="Number"
+                placeholder="3"
+            />
+        </div>
+        <div class="flexrow">
+            <label>{{localize "SR6E.Quantity"}}:</label>
+            <input
+                class="display"
+                type="text"
+                size="3"
+                maxlength="3"
+                name="system.technology.quantity"
+                value="{{system.technology.quantity}}"
+                data-dtype="Number"
+                placeholder="1"
+            />
+        </div>
+        <div class="flexrow">
+            <label>{{localize "SR6E.Price"}}:</label>
+            <span class="currency">
+                <i class="fas fa-yen-sign"></i>
+            </span>
+            <input 
+                class="display"
+                type="text"
+                name="system.technology.cost"
+                value="{{system.technology.cost}}"
+                data-dtype="Number"
+                placeholder="100"
+            />
+        </div>
+        <div class="flexrow">
+            <label>{{localize "SR6E.Avail"}}:</label>
+            <input
+                class="display"
+                type="text"
+                name="system.technology.availability"
+                value="{{system.technology.availability}}"
+                placeholder="2I"
+            />
+        </div>
+        <div class="flexrow">
+            {{localize "SR6E.Equipped"}}:
+            <input
+                class="checkbox"
+                type="checkbox"
+                name="system.technology.equipped"
+                {{checked system.technology.equipped}}
+            />
+        </div>
+        <div class="flexrow">
+            {{localize "SR6E.Wireless"}}:
+            <input
+                class="checkbox"
+                type="checkbox"
+                name="system.technology.wireless"
+                {{checked system.technology.wireless}}
+            />
+        </div>
+    </div>
+</div>

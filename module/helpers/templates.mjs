@@ -15,5 +15,6 @@
     // Item partials
     "systems/sr6e/templates/item/parts/header.html",
     "systems/sr6e/templates/item/parts/description.html",
+    "systems/sr6e/templates/item/parts/tech.html",
   ]);
 };

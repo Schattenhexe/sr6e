@@ -1,6 +1,8 @@
 {
   "Actor": {
-    
+    "types": [
+      "character"
+    ]
   },
   "Item": {
     "types": [
@@ -182,7 +184,8 @@
           }
         }
       },
-      "needsLicense": false
+      "needsLicense": false,
+      "source": ""
     },
     "lifestyle": {
       "templates": ["description"],

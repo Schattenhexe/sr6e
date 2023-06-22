@@ -12,6 +12,7 @@
   "SR6E.EffectDelete": "Delete Effect",
 
   "SR6E.Add": "Add",
+  "SR6E.source": "Source",
   
   "SR6E.Price": "Price",
   "SR6E.Avail": "Availability",
@@ -28,6 +29,9 @@
   "SR6E.AttackMod": "AR",
   "SR6E.DamageMod": "DV",
   "SR6E.Quantity": "Quantity",
+  "SR6E.Rating": "Rating",
+  "SR6E.Equipped": "Equipped",
+  "SR6E.Wireless": "Wireless",
   
   "SR6E.weaponTypes": {
     "melee": "Melee",
@@ -84,8 +88,6 @@
     "Description": "Description",
     "Weapon": "Weapon",
     "Ammo": "Ammo",
-    "WeaponMods": "Modifications",
-    "Effects": "Effects",
-    "Lifestyle": "Lifestyle"
+    "Mods": "Modifications"
   }
 }

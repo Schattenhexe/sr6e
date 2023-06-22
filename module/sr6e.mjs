@@ -67,6 +67,11 @@ Handlebars.registerHelper('toLowerCase', function(str) {
   return str.toLowerCase();
 });
 
+Handlebars.registerHelper('ife', function (v1, v2, options) {
+  if (v1 === v2) return options.fn(this);
+  else return options.inverse(this);
+});
+
 /* -------------------------------------------- */
 /*  Ready Hook                                  */
 /* -------------------------------------------- */
