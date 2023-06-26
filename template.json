@@ -6,7 +6,22 @@
   },
   "Item": {
     "types": [
+      "action",
+      "adept-power",
       "ammo",
+      "armor",
+      "complex-form",
+      "contact",
+      "critter-power",
+      "bodytech",
+      "device",
+      "equipment",
+      "modification",
+      "quality",
+      "sin",
+      "spell",
+      "sprite-power",
+      "spirit-power",
       "weapon",
       "lifestyle"
     ],
@@ -159,6 +174,42 @@
             }
           }
         }
+      },
+      "armor": {
+        "dr": 0,
+        "capacity": 0,
+        "mod": [],
+        "acid": 0,
+        "cold": 0,
+        "fire": 0,
+        "electricity": 0,
+        "social": 0
+      },
+      "matrix": {
+        "category": "commlink",
+        "attribs": {
+          "attr1": {
+            "value": 0,
+            "att": "attack",
+            "editable": true
+          },
+          "attr2": {
+            "value": 0,
+            "att": "sleaze",
+            "editable": true
+          },
+          "attr3": {
+            "value": 0,
+            "att": "data_processing",
+            "editable": true
+          },
+          "attr4": {
+            "value": 0,
+            "att": "firewall",
+            "editable": true
+          }
+        },
+        "networkDevices": []
       }
     },
     "htmlFields": ["description.value", "description.chat"],
