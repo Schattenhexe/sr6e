@@ -72,6 +72,12 @@ Handlebars.registerHelper('ife', function (v1, v2, options) {
   else return options.inverse(this);
 });
 
+Handlebars.registerHelper('hasprop', function (obj, prop, options) {
+  if (obj.hasOwnProperty(prop)) {
+    return options.fn(this);
+  } else return options.inverse(this);
+});
+
 /* -------------------------------------------- */
 /*  Ready Hook                                  */
 /* -------------------------------------------- */

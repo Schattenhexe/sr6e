@@ -88,6 +88,14 @@
     "Description": "Description",
     "Weapon": "Weapon",
     "Ammo": "Ammo",
-    "Mods": "Modifications"
-  }
+    "Mods": "Modifications",
+    "Action": "Action",
+    "Effects": "Effects",
+    "Armor": "Armor"
+  },
+  "SR6E.PowerPoints": "Power Points",
+  "SR6E.PowerLevel": "Power Level",
+  "SR6E.CyberwareGrade": "Grade",
+  "SR6E.EssenceCost": "Essence",
+  "SR6E.Capacity": "Capacity"
 }

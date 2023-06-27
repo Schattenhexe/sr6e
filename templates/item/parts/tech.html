@@ -1,8 +1,22 @@
 <div class="flexcol">
     <div class="tech">
-        {{#if system.essence}}
+        {{#hasprop system 'grade'}}
             <div class="flexrow">
-                <label>{{localize "SR6E.EssenceCost"}}</label>
+                <label>{{localize "SR6E.CyberwareGrade"}}:</label>
+                <input 
+                    class="display attribute-input" 
+                    type="text" 
+                    size="4" 
+                    name="system.grade" 
+                    value="{{system.grade}}"
+                    data-dtype="Text" 
+                    placeholder="0" 
+                />
+            </div>
+        {{/hasprop}}  
+        {{#hasprop system 'essence'}}   
+            <div class="flexrow">
+                <label>{{localize "SR6E.EssenceCost"}}:</label>
                 <input
                     class="display attribute-input"
                     type="text"
@@ -13,7 +27,21 @@
                     placeholder="0"
                 />
             </div>
-        {{/if}}
+        {{/hasprop}}
+        {{#hasprop system 'capacity'}}
+            <div class="flexrow">
+                <label>{{localize "SR6E.Capacity"}}:</label>
+                <input 
+                    class="display attribute-input" 
+                    type="text" 
+                    size="4" 
+                    name="system.capacity" 
+                    value="{{system.capacity}}"
+                    data-dtype="Number" 
+                    placeholder="0" 
+                />
+            </div>
+        {{/hasprop}}
         <div class="flexrow">
             <label>{{localize "SR6E.Rating"}}:</label>
             <input 

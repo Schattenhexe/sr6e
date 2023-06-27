@@ -12,13 +12,6 @@
             </div>
             <div class="prop">
                 <span class="label">
-                    {{localize "SR6E.Quantity"}}
-                </span>
-                <input type="text" name="system.technology.quantity" value="{{system.technology.quantity}}" data-dtype="Number"
-                    placeholder="0" />
-            </div>
-            <div class="prop">
-                <span class="label">
                     {{localize "SR6E.AttackMod"}}
                 </span>
                 <input type="text" name="system.attackMod" value="{{system.attackMod}}" data-dtype="Number" placeholder="0" />
@@ -30,6 +23,9 @@
                 <input type="text" name="system.damageMod" value="{{system.damageMod}}" data-dtype="Number" placeholder="0" />
             </div>
         </div>
-        {{> "systems/sr6e/templates/item/parts/description.html"}}
+        <div class="flexrow">
+            {{> "systems/sr6e/templates/item/parts/tech.html"}}
+            {{> "systems/sr6e/templates/item/parts/description.html"}}
+        </div>        
     </section>
 </form>

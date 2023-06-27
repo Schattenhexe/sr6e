@@ -248,6 +248,25 @@
       "permanent": false,
       "cost": 0,
       "mods": []
+    },
+    "action": {
+      "templates": ["description", "action"]
+    },
+    "adept-power": {
+      "templates": ["description", "action", "armor"],
+      "pp": 0,
+      "type": "",
+      "drain": false,
+      "level": 0
+    },
+    "armor": {
+      "templates": ["description", "armor", "technology"]
+    },
+    "bodytech": {
+      "templates": ["description", "technology", "action", "armor"],
+      "essence": "0",
+      "grade": "standard",
+      "capacity": "0"
     }
   }
 }

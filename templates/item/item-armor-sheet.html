@@ -1,11 +1,25 @@
 <form class="{{cssClass}} panoptikum" autocomplete="off">
     {{> "systems/sr6e/templates/item/parts/header.html"}}
     <nav class="tabs" data-group="primary">
-
+        <a class="item" data-tab="description">{{localize "SR6E.SheetTabs.Description"}}</a>
+        <a class="item" data-tab="armor">{{localize "SR6E.SheetTabs.Armor"}}</a>
+        <a class="item" data-tab="effects">{{localize "SR6E.SheetTabs.Effects"}}</a>
     </nav>
     <section class="basic-details">
-        <div class="tab" data-group="primary" data-tab="">
-
+        <div class="tab" data-group="primary" data-tab="description">
+            <div class="flexrow">
+                {{> "systems/sr6e/templates/item/parts/tech.html"}}
+                {{> "systems/sr6e/templates/item/parts/description.html"}}
+            </div>
+        </div>
+        <div class="tab" data-group="primary" data-tab="armor">
+            <div class="tabbody">
+                <div class="inventory">
+                    <div class="scrolls">
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </form>

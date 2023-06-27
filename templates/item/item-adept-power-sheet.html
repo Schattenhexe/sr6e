@@ -1,11 +1,48 @@
 <form class="{{cssClass}} panoptikum" autocomplete="off">
     {{> "systems/sr6e/templates/item/parts/header.html"}}
     <nav class="tabs" data-group="primary">
-
+        <a class="item" data-tab="description">{{localize "SR6E.SheetTabs.Description"}}</a>
+        <a class="item" data-tab="action">{{localize "SR6E.SheetTabs.Action"}}</a>
+        <a class="item" data-tab="effects">{{localize "SR6E.SheetTabs.Effects"}}</a>
     </nav>
     <section class="basic-details">
-        <div class="tab" data-group="primary" data-tab="">
-
+        <div class="tab" data-group="primary" data-tab="description">
+            <div class="flexrow">
+                <div class="flexcol">
+                    <div class="sidebar">
+                        <div class="flexrow">
+                            <label>{{localize "SR6E.PowerPoints"}}: </label>
+                            <input
+                                class="display"
+                                type="text"
+                                size="4"
+                                maxlength="6"
+                                name="system.pp"
+                                data-dtype="Number"
+                                value="{{system.pp}}"
+                                placeholder="0.5"
+                            />
+                        </div>
+                        <div class="flexrow">
+                            <label>{{localize "SR6E.PowerLevel"}}: </label>
+                            <input 
+                                class="display" 
+                                type="text" 
+                                size="4" 
+                                maxlength="6" 
+                                name="system.level" 
+                                data-dtype="Number" 
+                                value="{{system.level}}"
+                                placeholder="1" 
+                            />
+                        </div>
+                    </div>
+                </div>
+                {{> "systems/sr6e/templates/item/parts/description.html"}}
+            </div>
+        </div>
+        <div class="tab" data-group="primary" data-tab="action">
+        
         </div>
     </section>
 </form>
